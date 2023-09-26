@@ -1,6 +1,8 @@
 import '@babel/polyfill';
 import './index.html';
 import './index.scss';
-import sum from './modules/calc';
+import RANGE from './modules/length';
 
-console.log(sum(3, 5));
+RANGE.addEventListener('change', () => {
+  console.log(RANGE.value);
+});
