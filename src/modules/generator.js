@@ -1,3 +1,5 @@
+import getCharacters from './characters';
+
 class Password {
   constructor(str) {
     this.str = str;
@@ -10,11 +12,10 @@ class Password {
 }
 
 const getPassword = (value) => {
-  const str = 'qwertyuiopasdfghjklzxcvbn0123456789ASDFQWTTIYIUOIZXCVBX<KH';
   let password = '';
   let i = 1;
   while (i <= value) {
-    const currentSymbol = new Password(str);
+    const currentSymbol = new Password(getCharacters());
     password += currentSymbol.getRandomSymbol();
     i += 1;
   }
