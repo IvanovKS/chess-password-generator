@@ -6,6 +6,48 @@
   <title>Chess password generator</title>
 </head>
 <body>
-  <h1>HI</h1>
+  <div class="wrapper">
+    <div class="container">
+      <main class="main">
+        <h1>Password Generator</h1>
+        <div>
+          <section class="difficulty">
+            <p>Weak</p>
+            <div>
+              <img src="img/pawn.png" alt="difficulty">
+            </div>
+          </section>
+          <section class="generator">
+            <div class="generator-value">
+              <div class="password-value">
+                <p>AAASSSFFFGGGQQQEEETTTDDDD</p>
+                <button></button>
+              </div>
+              <button class="copy">Copy</button>
+            </div>
+            <div class="generator-length">
+              <p class="password-length">Password length:<span>15</span></p>
+              <div>
+                <input type="range" min="5" max="25" step="1" value="15">
+              </div>
+            </div>
+            <div class="generator-characters">
+              <p class="password-characters">Characters used:</p>
+              <form>
+                <input class="real-checkbox" id="123" type="checkbox" checked>
+                <label for="123"><span class="custom-checkbox"></span>123</label>
+                <input class="real-checkbox" id="abc" type="checkbox">
+                <label for="abc"><span class="custom-checkbox"></span>abc</label>
+                <input class="real-checkbox" id="ABC" type="checkbox">
+                <label for="ABC"><span class="custom-checkbox"></span>ABC</label>
+                <input class="real-checkbox" id="symbols" type="checkbox">
+                <label for="symbols"><span class="custom-checkbox"></span>#@$</label>
+              </form>
+            </div>
+          </section>
+        </div>
+      </main>
+    </div>
+  </div>
 </body>
 </html>
