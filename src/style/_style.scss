@@ -59,7 +59,6 @@ body {
           width: 200px;
           height: 40px;
           @include flex(flex, center, center);
-          background-color: $weak;
           border-radius: 4px;
           user-select: none;
           @media screen and (max-width: 950px) {
@@ -378,4 +377,12 @@ body {
     }
   }
 }
-
+.weak {
+  background-color: $weak;
+}
+.good {
+  background-color: $good;
+}
+.strong {
+  background-color: $strong;
+}
